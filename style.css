@@ -1,0 +1,141 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+
+
+#AI-container{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    position: absolute;
+    top: 10;
+    left: 30%;
+    transform: translate(10, -50%);
+
+}
+
+
+img{
+    height:100px;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+
+#player-container{
+    width: 80%;;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(80, -50%);
+}
+
+
+
+
+#winning-text{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: myanim 2.5s 
+
+}
+
+
+#player-one{
+    position: absolute;
+    left: 10%;
+    top: 88%;
+    transform: translate(-10%, -88%);
+    color: darkcyan;
+}
+
+#player-two{
+    position: absolute;
+    left: 10%;
+    top: 8%;
+    transform: translate(-10%, -88%);
+    color: darkcyan;
+}
+
+
+
+
+
+
+
+@keyframes myanim {
+    0% {left: 0; color: red;}
+    13%{color: orange}
+    26%{color: yellow}
+    40%{color: green;}
+    55%{color:blue}
+    70%{color:indigo}
+    85%{color:violet}
+    100%{left:50%; color: cyan;}
+}
+
+
+
+@media screen and (max-width: 600px){
+    img{
+        width: 70px;
+    }
+
+div{
+    width: 70%;
+}
+
+#player-container{
+    top: 70%;
+}
+
+#player-one{
+    top: 80%;
+    left: 5%;
+    font-size: 20px;
+}
+
+
+#player-two{
+    top: 8%;
+    left: 5%;
+    font-size: 20px;
+}
+
+}
+
+
+
+
+@media screen and (min-width:1440px){
+    img{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    img{
+        width:500px;
+        height:250px
+    }
+    
+}
+
+
+@media screen and (min-height: 700px){
+    body{
+        padding-top: 10%;
+    }
+}
